@@ -1,10 +1,9 @@
 FROM gitpod/workspace-full
 
-RUN apt-get update -qq && \
-    apt-get install -qq -y \
+RUN sudo apt-get update -qq && \
+    sudo apt-get install -qq -y \
     libboost-all-dev \
-    ccache && \
-    rm -rf /var/lib/apt/lists/*
+    ccache
 
 RUN cd /tmp && \
     wget https://developer.download.nvidia.com/compute/cuda/11.0.3/local_installers/cuda_11.0.3_450.51.06_linux.run && \
