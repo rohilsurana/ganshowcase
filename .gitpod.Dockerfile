@@ -11,4 +11,4 @@ RUN cd /tmp && \
     rm cuda_11.0.3_450.51.06_linux.run && \
     echo "PATH=\$PATH:/usr/local/cuda-11.0/bin" >> $HOME/.bashrc
 
-RUN pip install absl-py h5py pillow cupy chainer
+RUN pip install absl-py h5py pillow chainer
